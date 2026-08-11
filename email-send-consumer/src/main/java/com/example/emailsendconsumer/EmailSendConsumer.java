@@ -17,7 +17,7 @@ public class EmailSendConsumer {
         EmailSendMessage emailSendMessage =EmailSendMessage.fromJson(message);
 
         // ... 실제 이메일 발송 로직은 생략 ...
-        /* 
+        /*
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
