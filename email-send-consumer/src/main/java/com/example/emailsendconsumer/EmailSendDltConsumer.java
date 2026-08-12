@@ -22,9 +22,5 @@ public class EmailSendDltConsumer {
 
         // 알림 발송
         System.out.println("Slack 알림 발송");
-
-        
-
     }
-
 }

@@ -31,13 +31,12 @@ public class EmailSendConsumer {
         }
 
         // ... 실제 이메일 발송 로직은 생략 ...
-        /*
         try {
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException("이메일 발송 실패");
         }
-        */
+        
         System.out.println("이메일 발송 완료");
     }
 }
