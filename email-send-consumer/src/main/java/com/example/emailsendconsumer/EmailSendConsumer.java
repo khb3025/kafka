@@ -13,7 +13,8 @@ public class EmailSendConsumer {
 
     @KafkaListener(
         topics="email.send",
-        groupId = "email-send-group"
+        groupId = "email-send-group",
+        concurrency = "3" // 멀티 쓰레드를 사용하여 병렬적으로 처리하려는 partition 개수
     )
     @RetryableTopic(
         attempts = "5", // 재시도 횟수
